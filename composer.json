@@ -2,6 +2,8 @@
     "version": "1.0.0",
     "name": "content-pilot/wp-plugin-update-checker",
     "description": "Allow third-party, private plugins to be updated from GitHub",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Content Pilot",
