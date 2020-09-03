@@ -10,11 +10,26 @@
 namespace Content_Pilot\Wp_Plugin_Update_Checker;
 
 /**
- *
+ * Checks for updates from cloud repository if credentials are present in database.
+ * 
+ * Requires Plugin Update Checker library to work properly. 
+ * Typically only included in CP Web Pilot to avoid conflict.
+ * https://github.com/YahnisElsts/plugin-update-checker
+ * 
+ * Use Debug Bar plugin to troubleshoot connection.
+ * https://wordpress.org/plugins/debug-bar/
+ * 
+ * ```
+ * use Content_Pilot\Wp_Plugin_Update_Checker\Bootstrap as Update;
+ * private function run_update() {
+ *    $plugin_update = new Update( PLUGIN_NAME );
+ *    $this->loader->add_action( 'plugins_loaded', $plugin_update, 'update_from_cloud', 10 );
+ * }
+ * ```
  *
  * @since      1.0.0
  */
-class Init {
+class Bootstrap {
 
 	/**
 	 * Repository slug
