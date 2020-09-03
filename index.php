@@ -24,6 +24,12 @@ namespace Content_Pilot\Wp_Plugin_Update_Checker;
  * ```
  * 
  * ```
+ * public function __construct() {
+ *     $this->run_update();
+ * }
+ * ```
+ * 
+ * ```
  * private function run_update() {
  *    $plugin_update = new Update( PLUGIN_NAME );
  *    $this->loader->add_action( 'plugins_loaded', $plugin_update, 'update_from_cloud', 10 );
