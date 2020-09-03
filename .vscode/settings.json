@@ -1,0 +1,4 @@
+{
+    "phpcs.enable": true,
+    "phpcs.standard": "Wp_Plugin_Update_Checker"
+}
