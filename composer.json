@@ -1,5 +1,5 @@
 {
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "content-pilot/wp-plugin-update-checker",
     "description": "Allow third-party, private plugins to be updated from GitHub",
     "type": "library",
