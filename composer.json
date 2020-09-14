@@ -10,7 +10,9 @@
             "email": "wordpressdev@contentpilot.com"
         }
     ],
-    "autoload": {
-        "files": [ "index.php" ]
+    "autoload": {  
+        "classmap": [
+            "."
+        ]
     }
 }
