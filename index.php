@@ -47,7 +47,12 @@ class Bootstrap {
 					'https://github.com/content-pilot/%s',
 					esc_attr( $this->slug )
 				),
-				plugin_dir_path( dirname( dirname( dirname( __FILE__ ) ) ) ) . esc_attr( $this->slug ) . '.php',
+				sprintf(
+					'%s/wp-content/plugins/%s/%s.php',
+					ABSPATH,
+					esc_attr( $this->slug ),
+					esc_attr( $this->slug )
+				),
 				esc_attr( $this->slug )
 			);
 
@@ -59,6 +64,5 @@ class Bootstrap {
 			}
 		}
 	}
-
 
 }
