@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress update chcker for non wordpress.org plugins.
+ * WordPress update checker for non wordpress.org plugins.
  *
  * @since      1.0.0
  *
@@ -56,9 +56,6 @@ class Bootstrap {
 				esc_attr( $this->slug )
 			);
 
-			// Use release assets to get built version.
-			$update_checker->getVcsApi()->enableReleaseAssets();
-
 			// Authentication from WordPress option.
 			$global_settings = get_option( 'content_pilot_global_settings' );
 			if ( ! empty( $global_settings ) ) {
@@ -66,6 +63,9 @@ class Bootstrap {
 					$update_checker->setAuthentication( $global_settings['access_token'] );
 				}
 			}
+
+			// Use release assets to get built version.
+			$update_checker->getVcsApi()->enableReleaseAssets( '/' . $this->slug . '/' );
 		}
 	}
 

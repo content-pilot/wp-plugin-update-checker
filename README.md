@@ -33,6 +33,9 @@ private function run_update() {
 
 ### Changelog
 
+##### 1.1.1
+* Define the plugin path for the release asset
+
 ##### 1.1.0
 * Enable release assets to grab the built version of the repository
 
