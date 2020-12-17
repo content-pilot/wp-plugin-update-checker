@@ -4,7 +4,7 @@ Library to bootstrap plugin updates for third-party, private repositories if an 
 
 ### Installation
 
-Requre this package in your composer.json
+Require this package in your composer.json
 
 ```
 composer require content-pilot/wp-plugin-update-checker
@@ -32,6 +32,9 @@ private function run_update() {
 ```
 
 ### Changelog
+
+##### 1.1.0
+* Enable release assets to grab the built version of the repository
 
 ##### 1.0.1
 * Change plugin_dir_path to accomodate vendor directory nesting
