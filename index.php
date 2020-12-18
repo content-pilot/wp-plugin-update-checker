@@ -65,7 +65,7 @@ class Bootstrap {
 			}
 
 			// Use release assets to get built version.
-			$update_checker->getVcsApi()->enableReleaseAssets( '/' . $this->slug . '/' );
+			$update_checker->getVcsApi()->enableReleaseAssets();
 		}
 	}
 

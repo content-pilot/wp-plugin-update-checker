@@ -33,6 +33,9 @@ private function run_update() {
 
 ### Changelog
 
+##### 1.1.2
+* Remove the asset parameter so we grab the first asset on the release
+
 ##### 1.1.1
 * Define the plugin path for the release asset
 
