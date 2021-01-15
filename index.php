@@ -56,13 +56,8 @@ class Bootstrap {
 				esc_attr( $this->slug )
 			);
 
-			// Authentication from WordPress option.
-			$global_settings = get_option( 'content_pilot_global_settings' );
-			if ( ! empty( $global_settings ) ) {
-				if ( isset( $global_settings['access_token'] ) ) {
-					$update_checker->setAuthentication( $global_settings['access_token'] );
-				}
-			}
+			// Authenticate with database option value.
+			$update_checker->setAuthentication( get_option( 'content_pilot_access_token', '' ) );
 
 			// Use release assets to get built version.
 			$update_checker->getVcsApi()->enableReleaseAssets();
