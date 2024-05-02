@@ -33,6 +33,12 @@ private function run_update() {
 
 ### Changelog
 
+##### 2.0.0
+* Require Plugin Update Checker 5
+
+##### 1.2.0
+* Change how license key is pulled from database
+
 ##### 1.1.2
 * Remove the asset parameter so we grab the first asset on the release
 
