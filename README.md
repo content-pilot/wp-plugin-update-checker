@@ -1,6 +1,6 @@
 # WordPress Plugin Update Checker
 
-Library to bootstrap plugin updates for third-party, private repositories if an access token is present. This class requires the [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) class to be exist. Typically only included in CP Web Pilot to avoid conflict. Use the [Debug Bar](https://wordpress.org/plugins/debug-bar/) plugin to troubleshoot a proper connection.
+Library to bootstrap plugin updates for third-party, private repositories if an access token is present. This class requires the [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) class v5 to be exist. Typically only included in CP Web Pilot to avoid conflict. Use the [Debug Bar](https://wordpress.org/plugins/debug-bar/) plugin to troubleshoot a proper connection.
 
 ### Installation
 
