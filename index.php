@@ -41,8 +41,8 @@ class Bootstrap {
 	 * @since    1.0.0
 	 */
 	public function update_from_cloud() {
-		if ( class_exists( 'Puc_v4_Factory' ) ) {
-			$update_checker = \Puc_v4_Factory::buildUpdateChecker(
+		if ( class_exists( '\YahnisElsts\PluginUpdateChecker\v5\PucFactory' ) ) {
+			$update_checker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
 				sprintf(
 					'https://github.com/content-pilot/%s',
 					esc_attr( $this->slug )
